@@ -1,4 +1,4 @@
-Source: https://github.com/firefart/sandbox
+** Source: https://github.com/firefart/sandbox
 
 First download all files by executing .\downloadFiles.ps1 inside powershell. This will grab all setups needed. Then run .\createSandboxConfig.ps1 once to create the .wsb file. This is needed because relative paths are currently not supported by Windows Sandbox.
 
