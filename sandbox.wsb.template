@@ -1,0 +1,15 @@
+<Configuration>
+  <VGpu>Disable</VGpu>
+  <Networking>Enable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ProtectedClient>Default</ProtectedClient>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <ClipboardRedirection>Enable</ClipboardRedirection>
+  <MappedFolders>
+    __MAPPED_FOLDERS__
+  </MappedFolders>
+  <LogonCommand>
+    <Command>Start-Process powershell.exe -ArgumentList "-ExecutionPolicy Bypass -File C:\Users\WDAGUtilityAccount\Desktop\Sandbox\ConfigFiles\autostart.ps1"</Command>
+  </LogonCommand>
+</Configuration>
