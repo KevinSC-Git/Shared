@@ -1,3 +1,32 @@
+<#
+.SYNOPSIS
+    This PowerShell script retrieves a list of company-owned Windows devices from Microsoft Intune using Microsoft Graph API.
+    It maps OS versions to friendly names, gathers key device details, and generates an HTML report.
+
+.DESCRIPTION
+    - Connects to Microsoft Graph API interactively.
+    - Retrieves all managed Windows devices.
+    - Filters only company-owned devices.
+    - Maps OS versions using a predefined OS version dictionary.
+    - Collects and logs details such as Device Name, OS Version, OS Build, Primary User, and Last Sync Date.
+    - Generates an HTML report summarizing the collected data.
+    - Logs key script actions for troubleshooting and auditing.
+
+.PARAMETER None
+    The script does not take any parameters.
+
+.OUTPUTS
+    - An HTML report is saved in the script's directory.
+    - Log file is created in a "Logs" folder.
+
+.NOTES
+    - Requires Microsoft Graph PowerShell module.
+    - Ensure the script is run with necessary permissions to access Intune device management data.
+
+.EXAMPLE
+    PS> .\Get-IntuneCompanyOwnedDevices.ps1
+#>
+
 function Write-Log {
     param (
         [string]$message
