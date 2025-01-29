@@ -23,6 +23,7 @@ It maps OS versions to friendly names and generates an **HTML report** containin
 - Run PowerShell with **administrator privileges**.
 
 ## How to use
+Save this script in a folder with a foldername without any spaces (currently)
 ```powershell
 # Run the script
 .\Get-IntuneCompanyOwnedDevices.ps1
