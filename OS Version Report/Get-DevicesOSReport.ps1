@@ -47,7 +47,7 @@ function Write-Log {
     }
 
     # Define the log file path
-    $logFile = Join-Path -Path $logsDirectory -ChildPath "logfile.log"
+    $logFile = Join-Path -Path $logsDirectory -ChildPath "IntuneDeviceReport.log"
 
     # Create the log message with a timestamp
     $timestamp = (Get-Date).ToString("yyyy-MM-dd HH:mm:ss")
